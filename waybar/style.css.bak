@@ -1,0 +1,57 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Hack, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #98971a;
+    color: #3c3836;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: #98971a;
+    color: #3c3836;
+}
+
+#workspaces button.focused {
+    background: #79740e;
+    color: #ebdbb2;
+}
+
+#pulseaudio, #clock, #battery {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#mode {
+    padding: 0 10px;
+    background: #b16286;
+    color: #ebdbb2;
+}
+
+#clock {
+}
+
+#battery {
+}
+
+#battery.charging {
+    color: #ebdbb2;
+    background-color: #427b58;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    color: #ebdbb2;
+    background-color: #af3a03;
+}
